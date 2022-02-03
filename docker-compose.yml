@@ -7,3 +7,10 @@ services:
       context: ./dante
     ports:
       - 3128:3128
+
+  dante_direct:
+    container_name: dante_direct
+    build:
+      context: ./dante_direct
+    ports:
+      - 3129:3128
